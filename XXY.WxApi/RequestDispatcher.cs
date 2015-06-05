@@ -42,6 +42,17 @@ namespace XXY.WxApi {
             Regist(msgtype, eventType, typeof(T));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        public static void Regist<T>() where T : RequestHandler {
+            var rt = typeof(T).GetCustomAttribute<RequestTypeAttribute>();
+            if (rt != null) {
+                Regist<T>(rt.MessageType, rt.EventType);
+            }
+        }
+
 
         //static MessageDispatcher() {
         //    var ts = AppDomain.CurrentDomain.GetAssemblies().SelectMany(s => s.GetTypes()).ToList();

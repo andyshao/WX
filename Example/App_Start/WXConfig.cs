@@ -9,7 +9,7 @@ using XXY.WxApi;
 using XXY.WxApi.Entities;
 using XXY.WxApi.Entities.Requests;
 
-namespace Example.App_Start {
+namespace Example {
     /// <summary>
     /// 微信ApiClient 配置
     /// </summary>
@@ -27,14 +27,22 @@ namespace Example.App_Start {
             RequestDispatcher.GetService = t => DependencyResolver.Current.GetService(t);
 
             #region 注册处理程序
-            RequestDispatcher.Regist<TextHandler>(RequestTypes.Text);
-            RequestDispatcher.Regist<VoiceHandler>(RequestTypes.Voice);
-            RequestDispatcher.Regist<LinkHandler>(RequestTypes.Link);
+            RequestDispatcher.Regist<TextHandler>();
+            RequestDispatcher.Regist<VoiceHandler>();
+            RequestDispatcher.Regist<LinkHandler>();
 
 
-            RequestDispatcher.Regist<ClickHandler>(RequestTypes.Event, EventTypes.Click);
-            RequestDispatcher.Regist<SubscribeHandler>(RequestTypes.Event, EventTypes.Subscribe);
-            RequestDispatcher.Regist<UnsubscribeHandler>(RequestTypes.Event, EventTypes.Unsubscribe);
+            RequestDispatcher.Regist<ClickHandler>();
+            RequestDispatcher.Regist<SubscribeHandler>();
+            RequestDispatcher.Regist<UnsubscribeHandler>();
+            //RequestDispatcher.Regist<TextHandler>(RequestTypes.Text);
+            //RequestDispatcher.Regist<VoiceHandler>(RequestTypes.Voice);
+            //RequestDispatcher.Regist<LinkHandler>(RequestTypes.Link);
+
+
+            //RequestDispatcher.Regist<ClickHandler>(RequestTypes.Event, EventTypes.Click);
+            //RequestDispatcher.Regist<SubscribeHandler>(RequestTypes.Event, EventTypes.Subscribe);
+            //RequestDispatcher.Regist<UnsubscribeHandler>(RequestTypes.Event, EventTypes.Unsubscribe);
             #endregion
         }
 
