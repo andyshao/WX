@@ -49,6 +49,5 @@ D:\NET\GIT\WX\XXY.WxApi\bin\Debug\Microsoft.Practices.Unity.Interception.xml
 D:\NET\GIT\WX\XXY.WxApi\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
 D:\NET\GIT\WX\XXY.WxApi\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
 D:\NET\GIT\WX\XXY.WxApi\bin\Debug\Newtonsoft.Json.xml
-D:\NET\GIT\WX\XXY.WxApi\obj\Debug\XXY.WxApi.csprojResolveAssemblyReference.cache
 D:\NET\GIT\WX\XXY.WxApi\obj\Debug\XXY.WxApi.dll
 D:\NET\GIT\WX\XXY.WxApi\obj\Debug\XXY.WxApi.pdb
